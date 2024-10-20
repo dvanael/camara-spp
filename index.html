@@ -5,9 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CamaraSPP - Câmara Municipal de São Paulo do Potengi - Brasil </title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/carousel.css">
+  <link rel="stylesheet" href="src/css/navbar.css">
+  <link rel="stylesheet" href="src/css/quick-access.css">
 </head>
 <body>
-  <h1>Hello, World</h1>
+  <div class="container-fluid">
+    <nav class="container navbar">
+      <ul>
+        <li class="logo"><a href="index.html">LOGO</a></li>
+      </ul>
+      <ul class="nav-btn-menu d-mobile ">
+        <li><button class="btn-menu">&#9776;</button></li>  
+      </ul>
+      <ul class="nav-menu d-none-mobile">
+        <li><a href="index.html">Incio</a></li>
+        <li><a href="sobre.html">Municio</a></li>
+        <li><a href="contato.html">Ouvidoria</a></li>
+        <li><a href="contato.html">E-Sic</a></li>
+        <li><button class="bnt-menu">&#9776;</button></li>  
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <main>
+      <section id="search">
+        <form action="" method="get">
+          <fieldset role="group">
+            <input type="text" name="search" id="id-search" placeholder="O que você procura?">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="carousel">
+        <div class="carousel">
+          <button class="btn btn-rounded next-carousel"> -> </button>
+          <button class="btn btn-rounded prev-carousel"> <- </button>
+          <div class="carousel-list">
+            <img class="item" src="https://placehold.co/1270x720/lightblue/white" alt="Lorem">
+            <img class="item" src="https://placehold.co/1270x720/blue/white" alt="Lorem">
+            <img class="item" src="https://placehold.co/1270x720/skyblue/white" alt="Lorem">
+          </div>
+        </div>
+      </section>
+
+      <section id="quick-access">
+        <details>
+          <summary class="quick-access-accordion" role="button">Acesso Rápido</summary>
+          <div class="quick-access-list">
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+  </div>
 </body>
+<script src="src/js/navbar.js"></script>
+<script src="src/js/carousel.js"></script>
 </html>
