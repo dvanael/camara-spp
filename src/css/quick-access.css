@@ -1,18 +1,23 @@
 
-@import url('main.css');
-
 /* test */
 #quick-access summary{
+  background-color: transparent;
+  border: var(--primary-400) 0.1rem solid;
+  border-radius: var(--default-radius);
+  box-shadow: none;
+  color: var(--text-950);
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .quick-access-list {
-  background-color: var(--background-200);
-  border-radius: var(--default-radius);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
   padding: 0.5rem;
+  border-inline: var(--primary-400) 0.1rem solid;
+  border-bottom: var(--primary-400) 0.1rem solid;
 }
 
 .quick-access-list .item {
@@ -23,10 +28,14 @@
   gap: 0.4rem;
   width: 5rem;
   height: 5rem;
+  background-color: var(--background-100);
   padding: 1.5rem;
-  background-color: var(--accent-500);
-  color: var(--text-50);
+  color: var(--primary-700);
   border-radius: var(--default-radius);
+  &:hover{
+    background-color: var(--primary-500);
+    color: var(--text-50);
+  }
 }
 
 

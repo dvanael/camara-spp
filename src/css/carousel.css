@@ -1,7 +1,4 @@
 
-@import url('main.css');
-
-
 .carousel {
   position: relative;
 }
@@ -51,6 +48,6 @@
 }
 
 .carousel .item {
-  flex: 0 0 80%; /* Ajuste para quantos itens você deseja visíveis */
+  flex: 0 0 80%;
   scroll-snap-align: start;
 }

@@ -206,9 +206,26 @@ small {font-size: 0.750rem; /* 12px */}
 
 .input-search{
   border-radius: 25rem;
+  background-color: transparent;
+  &:focus{
+    border: none;
+  }
 }
 
 .btn-search{
   border-radius: var(--default-radius);
   width: 30% !important;
+}
+
+.about-camara{
+  color: var(--text-950);
+}
+
+.about-camara h1{
+  font-size: 1.5rem;
+}
+
+.about-camara .text{
+  display: flex;
+  flex-direction: column-reverse;
 }
