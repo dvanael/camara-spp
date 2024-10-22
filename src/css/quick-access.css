@@ -2,16 +2,17 @@
 @import url('main.css');
 
 /* test */
-#quick-access details{
-  background-color: aquamarine;
+#quick-access summary{
+  margin: 0;
 }
 
 .quick-access-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  background-color: var(--background-200);
+  border-radius: var(--default-radius);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .quick-access-list .item {
@@ -23,9 +24,11 @@
   width: 5rem;
   height: 5rem;
   padding: 1.5rem;
-  background-color: var(--accent-600);
+  background-color: var(--accent-500);
+  color: var(--text-50);
   border-radius: var(--default-radius);
 }
+
 
 .quick-access-list .item span{
   text-align: center;

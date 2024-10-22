@@ -7,71 +7,71 @@
     --default-radius: 0.5rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-50: #f2f3f3;
-    --text-100: #e4e7e7;
-    --text-200: #cacece;
-    --text-300: #afb6b6;
-    --text-400: #959d9d;
-    --text-500: #7a8585;
-    --text-600: #626a6a;
-    --text-700: #495050;
-    --text-800: #313535;
-    --text-900: #181b1b;
-    --text-950: #0c0d0d;
+/* @media (prefers-color-scheme: light) and (prefers-color-scheme: dark) { */
+:root {
+  --text-50: #f2f3f3;
+  --text-100: #e4e7e7;
+  --text-200: #cacece;
+  --text-300: #afb6b6;
+  --text-400: #959d9d;
+  --text-500: #7a8585;
+  --text-600: #626a6a;
+  --text-700: #495050;
+  --text-800: #313535;
+  --text-900: #181b1b;
+  --text-950: #0c0d0d;
 
-    --background-50: #eff1f6;
-    --background-100: #dfe3ec;
-    --background-200: #bec7da;
-    --background-300: #9eacc7;
-    --background-400: #7d90b5;
-    --background-500: #5d74a2;
-    --background-600: #4a5d82;
-    --background-700: #384661;
-    --background-800: #252e41;
-    --background-900: #131720;
-    --background-950: #090c10;
+  --background-50: #eff1f6;
+  --background-100: #dfe3ec;
+  --background-200: #bec7da;
+  --background-300: #9eacc7;
+  --background-400: #7d90b5;
+  --background-500: #5d74a2;
+  --background-600: #4a5d82;
+  --background-700: #384661;
+  --background-800: #252e41;
+  --background-900: #131720;
+  --background-950: #090c10;
 
-    --primary-50: #e5ecff;
-    --primary-100: #ccd9ff;
-    --primary-200: #99b3ff;
-    --primary-300: #668cff;
-    --primary-400: #3366ff;
-    --primary-500: #0040ff;
-    --primary-600: #0033cc;
-    --primary-700: #002699;
-    --primary-800: #001966;
-    --primary-900: #000d33;
-    --primary-950: #00061a;
+  --primary-50: #e5ecff;
+  --primary-100: #ccd9ff;
+  --primary-200: #99b3ff;
+  --primary-300: #668cff;
+  --primary-400: #3366ff;
+  --primary-500: #0040ff;
+  --primary-600: #0033cc;
+  --primary-700: #002699;
+  --primary-800: #001966;
+  --primary-900: #000d33;
+  --primary-950: #00061a;
 
-    --secondary-50: #e9eefb;
-    --secondary-100: #d4ddf7;
-    --secondary-200: #a9baef;
-    --secondary-300: #7e98e7;
-    --secondary-400: #5376df;
-    --secondary-500: #2854d7;
-    --secondary-600: #2043ac;
-    --secondary-700: #183281;
-    --secondary-800: #102156;
-    --secondary-900: #08112b;
-    --secondary-950: #040816;
+  --secondary-50: #e9eefb;
+  --secondary-100: #d4ddf7;
+  --secondary-200: #a9baef;
+  --secondary-300: #7e98e7;
+  --secondary-400: #5376df;
+  --secondary-500: #2854d7;
+  --secondary-600: #2043ac;
+  --secondary-700: #183281;
+  --secondary-800: #102156;
+  --secondary-900: #08112b;
+  --secondary-950: #040816;
 
-    --accent-50: #e7ecfe;
-    --accent-100: #cedafd;
-    --accent-200: #9eb5fa;
-    --accent-300: #6d90f8;
-    --accent-400: #3c6bf6;
-    --accent-500: #0b45f4;
-    --accent-600: #0938c3;
-    --accent-700: #072a92;
-    --accent-800: #051c61;
-    --accent-900: #020e31;
-    --accent-950: #010718;
+  --accent-50: #e7ecfe;
+  --accent-100: #cedafd;
+  --accent-200: #9eb5fa;
+  --accent-300: #6d90f8;
+  --accent-400: #3c6bf6;
+  --accent-500: #0b45f4;
+  --accent-600: #0938c3;
+  --accent-700: #072a92;
+  --accent-800: #051c61;
+  --accent-900: #020e31;
+  --accent-950: #010718;
 
-  }
 }
-@media (prefers-color-scheme: dark) {
+/* } */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-50: #0c0d0d;
     --text-100: #181b1b;
@@ -134,12 +134,16 @@
     --accent-950: #e7ecfe;
 
   }
-}
+} */
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  background-color: var(--background-50) !important;
 }
 
 body {
@@ -168,6 +172,11 @@ h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
 
+
+.container{
+  max-width: 1200px;
+}
+
 @media screen and (max-width: 576px) {
   .d-none-mobile {
     display: none !important;
@@ -182,14 +191,24 @@ small {font-size: 0.750rem; /* 12px */}
 }
 
 .btn {
-  border: var(--text) 1px solid;
+  border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--default-radius);
-  color: var(--text);
+  background-color: var(--primary-400) !important;
+  color: var(--text-50) !important;
 }
 
 .btn-rounded{
   border-radius: var(--rounded-radius) !important;
   width: 3rem;
   height: 3rem;
+}
+
+.input-search{
+  border-radius: 25rem;
+}
+
+.btn-search{
+  border-radius: var(--default-radius);
+  width: 30% !important;
 }

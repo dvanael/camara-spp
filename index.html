@@ -23,11 +23,11 @@
         <li><button class="btn-menu">&#9776;</button></li>  
       </ul>
       <ul class="nav-menu d-none-mobile">
-        <li><a href="index.html">Incio</a></li>
+        <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Municio</a></li>
         <li><a href="contato.html">Ouvidoria</a></li>
         <li><a href="contato.html">E-Sic</a></li>
-        <li><button class="bnt-menu">&#9776;</button></li>  
+        <li><button class="btn bnt-menu btn-rounded">&#9776;</button></li>  
       </ul>
     </nav>
   </div>
@@ -37,8 +37,8 @@
       <section id="search">
         <form action="" method="get">
           <fieldset role="group">
-            <input type="text" name="search" id="id-search" placeholder="O que você procura?">
-            <button type="submit">
+            <input class="input-search" type="text" name="search" id="id-search" placeholder="O que você procura?">
+            <button class="btn btn-search" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </fieldset>
@@ -47,8 +47,12 @@
 
       <section id="carousel">
         <div class="carousel">
-          <button class="btn btn-rounded next-carousel"> -> </button>
-          <button class="btn btn-rounded prev-carousel"> <- </button>
+          <button class="btn btn-rounded next-carousel">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="btn btn-rounded prev-carousel">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
           <div class="carousel-list">
             <img class="item" src="https://placehold.co/1270x720/lightblue/white" alt="Lorem">
             <img class="item" src="https://placehold.co/1270x720/blue/white" alt="Lorem">
@@ -61,6 +65,18 @@
         <details>
           <summary class="quick-access-accordion" role="button">Acesso Rápido</summary>
           <div class="quick-access-list">
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>projetos de lei </span>
+            </div>
             <div class="item">
               <i class="fa-solid fa-landmark"></i>
               <span>projetos de lei </span>
