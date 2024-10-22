@@ -150,6 +150,9 @@ body {
   font-family: 'Inter';
   font-weight: 400;
   background-color: var(--background-50);
+}
+
+body *{
   color: var(--text-950);
 }
 
@@ -172,6 +175,13 @@ h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
 
+fieldset{
+  margin: 0 !important;
+}
+
+section {
+  margin-bottom: 2rem;
+}
 
 .container{
   max-width: 1200px;
@@ -217,15 +227,17 @@ small {font-size: 0.750rem; /* 12px */}
   width: 30% !important;
 }
 
-.about-camara{
-  color: var(--text-950);
-}
-
 .about-camara h1{
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.about-camara .text{
+.about-camara .content{
   display: flex;
   flex-direction: column-reverse;
+}
+
+.about-camara .content img{
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }

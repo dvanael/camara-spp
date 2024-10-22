@@ -1,0 +1,55 @@
+
+.footer{
+  background-color: var(--primary-500);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+
+footer *{
+  color: var(--text-100);
+}
+
+footer .socials{
+  margin-block: 1rem;
+}
+footer .socials h1{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+footer .socials .list{
+  font-size: 3rem;
+  display: flex;
+  gap: 3.5rem;
+}
+
+footer .channels{
+  display: flex;
+}
+footer .channels img{
+  display: none;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+footer .channels ul li{
+  list-style: none;
+  &:first-child{
+    font-size: 1.5rem;
+    text-transform: uppercase ;
+    font-weight: 600; 
+  }
+}
+
+footer .channels ul:first-child{
+  font-size: 1.5rem;
+  background-color: aqua;
+}
+
+footer .channels ul li span{
+  text-transform: uppercase;
+  font-weight: 600;
+}
