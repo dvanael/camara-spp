@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="src/css/quick-access.css">
   <link rel="stylesheet" href="src/css/vereadores.css">
   <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/css/sidebar.css">
+
 </head>
 <body>
   <div class="container-fluid navbar">
@@ -26,13 +28,61 @@
       </ul>
       <ul class="nav-menu d-none-mobile">
         <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Municio</a></li>
+        <li><a href="sobre.html">Município</a></li>
         <li><a href="contato.html">Ouvidoria</a></li>
         <li><a href="contato.html">E-Sic</a></li>
-        <li><button class="btn bnt-menu btn-rounded">&#9776;</button></li>  
+        <li class="d-none-mobile"><button class="btn bnt-menu btn-rounded" id="open-sidebar">&#9776;</button></li>
       </ul>
     </nav>
   </div>
+
+  <div class="sidebar ">
+    <ul class="sidebar-content">
+      <li class="nav-item">
+        <details class="item">
+          <summary>Institucial</summary>
+          <ul>
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </details>
+      </li>
+
+      <li class="nav-item">
+        <details class="item">
+          <summary>Lesgislativo</summary>
+          <ul>
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </details>
+      </li>
+
+      <li class="nav-item">
+        <details class="item">
+          <summary>Transparência</summary>
+          <ul>
+            <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+            <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+            <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth <= 576) {
+      const navMenu = document.querySelector('.nav-menu');
+      const navItems = document.querySelectorAll('.nav-item');
+
+      navItems.forEach(item => {
+        navMenu.appendChild(item.cloneNode(true));
+      });
+    }
+  });
+</script>
+  <div class="overlay"></div>
 
   <div class="container">
     <main>
@@ -194,4 +244,5 @@
 </body>
 <script src="src/js/navbar.js"></script>
 <script src="src/js/carousel.js"></script>
+<script src="src/js/sidebar.js"></script>
 </html>

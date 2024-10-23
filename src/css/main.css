@@ -150,6 +150,7 @@ body {
   font-family: 'Inter';
   font-weight: 400;
   background-color: var(--background-50);
+  z-index: 0;
 }
 
 body *{
@@ -200,12 +201,24 @@ section {
   }
 }
 
+.d-none {
+  display: none;
+}
+
 .btn {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--default-radius);
   background-color: var(--primary-400) !important;
-  color: var(--text-50) !important;
+  box-shadow: none;
+  color: var(--text-50);
+  &:hover{
+    scale: 1.1;
+  }
+}
+
+.btn i{
+  color: var(--text-50);
 }
 
 .btn-rounded{
