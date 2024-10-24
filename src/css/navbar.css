@@ -1,7 +1,7 @@
 
 .navbar{
-  background-color: var(--background);
-  border-bottom: 1px solid var(--text);
+  background-color: var(--background-50);
+  border-bottom: 1px solid var(--text-950);
   margin-bottom: 1rem;
   @media screen and (min-width: 1024px) {
     position: sticky;
