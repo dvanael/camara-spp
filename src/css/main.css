@@ -184,9 +184,9 @@ section {
   margin-bottom: 2rem;
 }
 
-/* .container{
-  max-width: 1200px;
-} */
+.container{
+  max-width: 1024px;
+}
 
 @media screen and (max-width: 576px) {
   .d-none-mobile {
@@ -248,6 +248,10 @@ section {
 .about-camara .content{
   display: flex;
   flex-direction: column-reverse;
+  gap: 1rem;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 }
 
 .about-camara .content img{
@@ -276,4 +280,9 @@ section {
 
 .InputDesc-ouvidoria {
   height: 200px;
+}
+
+[role=group], [role=search] {
+  box-shadow: none;
+  border: none;
 }
