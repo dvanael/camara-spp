@@ -185,7 +185,7 @@ section {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1024px;
 }
 
 @media screen and (max-width: 576px) {
@@ -248,9 +248,18 @@ section {
 .about-camara .content{
   display: flex;
   flex-direction: column-reverse;
+  gap: 1rem;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 }
 
 .about-camara .content img{
   aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+[role=group], [role=search] {
+  box-shadow: none;
+  border: none;
 }
