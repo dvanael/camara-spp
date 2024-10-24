@@ -14,28 +14,30 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+
   <link rel="stylesheet" href="municipio.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/css/sidebarcss">
   <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/navbar.css">
 </head>
 
 
 <body>
-  <!-- Container principal -->
-  <div class="container-fluid">
-    <!-- Navbar -->
-    <nav class="container navbar">
+  <div class="container-fluid navbar">
+    <nav class="container">
       <ul>
         <li class="logo"><a href="index.html">LOGO</a></li>
       </ul>
+      <ul class="nav-btn-menu d-mobile ">
+        <link rel="stylesheet" href="src/css/main.css">
+      </ul>
       <ul class="nav-menu d-none-mobile">
         <li><a href="index.html">Início</a></li>
-        <li><a href="municipio.html">Município</a></li>
-        <li><a href="ouvidoria.html">Ouvidoria</a></li>
-        <li><a href="esic.html">E-Sic</a></li>
-        <li><button class="btn btn-rounded">&#9776;</button></li>
+        <li><a href="sobre.html">Município</a></li>
+        <li><a href="contato.html">Ouvidoria</a></li>
+        <li><a href="contato.html">E-Sic</a></li>
+        <li class="d-none-mobile"><button class="btn bnt-menu btn-rounded" id="open-sidebar">&#9776;</button></li>
       </ul>
     </nav>
   </div>
@@ -74,6 +76,18 @@
       </li>
     </ul>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 576) {
+        const navMenu = document.querySelector('.nav-menu');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        navItems.forEach(item => {
+          navMenu.appendChild(item.cloneNode(true));
+        });
+      }
+    });
+  </script>
 
   <!-- Conteúdo principal da página -->
   <main class="container">
@@ -82,8 +96,13 @@
 
 
       <div class="blue-box"></div>
-      <p>São Paulo do Potengi é um município brasileiro do estado do Rio Grande do Norte, localizado a 71 quilômetros da capital potiguar, na região do Agreste Potiguar. De acordo com o censo realizado pelo IBGE (Instituto Brasileiro de Geografia e Estatística) no ano de 2013, sua população é de 17.066 habitantes. Área territorial de 221 km².</p>
-      <p>Além de Canguaretama e Ceará-Mirim, São Paulo do Potengi é um dos três municípios do estado do Rio Grande do Norte que ganharão unidades do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).</p>
+      <p>São Paulo do Potengi é um município brasileiro do estado do Rio Grande do Norte, localizado a 71 quilômetros da
+        capital potiguar, na região do Agreste Potiguar. De acordo com o censo realizado pelo IBGE (Instituto Brasileiro
+        de Geografia e Estatística) no ano de 2013, sua população é de 17.066 habitantes. Área territorial de 221 km².
+      </p>
+      <p>Além de Canguaretama e Ceará-Mirim, São Paulo do Potengi é um dos três municípios do estado do Rio Grande do
+        Norte que ganharão unidades do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte
+        (IFRN).</p>
       <p>Fundação: 1943<br>
         Gentílico: Potengiense</p>
     </section>
@@ -91,8 +110,16 @@
 
     <section class="historia-section">
       <h2>HISTORIA DO MUNICIPIO</h2>
-      <p>Na primeira metade do século passado, na margem esquerda do Rio Potengi, em território pertencente a São Gonçalo do Amarante, existia um povoado por nome “Juremal” que se destacava devido ao seu acentuado comércio, inclusive com feira dominical.</p>
-      <p>O pequeno lugarejo localizava-se bem próximo da margem do Rio Potengi, correndo sempre o risco de enchentes em épocas de inverno, como a que ocorreu em 1909, quando o povoado foi inundado. Temendo a ameaça das águas, Bento Urbano de Araújo, morador e comerciante daquela localidade, resolveu pedir ao chefe do Juremal o Sr. Avelino Pinheiro, para mudar-se para um local mais afastado do rio. Tendo seu pedido negado, o mesmo foi falar com o Cel. Manoel Maurício Freire, chefe político de Macaíba. Devido a problemas políticos e pessoais entre o chefe político macaibense e Estevam Moura, chefe político de São Gonçalo do Amarante, a resposta foi imediata: “Vamos formar um povoado do lado de Macaíba próximo ao Juremal”.</p>
+      <p>Na primeira metade do século passado, na margem esquerda do Rio Potengi, em território pertencente a São
+        Gonçalo do Amarante, existia um povoado por nome “Juremal” que se destacava devido ao seu acentuado comércio,
+        inclusive com feira dominical.</p>
+      <p>O pequeno lugarejo localizava-se bem próximo da margem do Rio Potengi, correndo sempre o risco de enchentes em
+        épocas de inverno, como a que ocorreu em 1909, quando o povoado foi inundado. Temendo a ameaça das águas, Bento
+        Urbano de Araújo, morador e comerciante daquela localidade, resolveu pedir ao chefe do Juremal o Sr. Avelino
+        Pinheiro, para mudar-se para um local mais afastado do rio. Tendo seu pedido negado, o mesmo foi falar com o
+        Cel. Manoel Maurício Freire, chefe político de Macaíba. Devido a problemas políticos e pessoais entre o chefe
+        político macaibense e Estevam Moura, chefe político de São Gonçalo do Amarante, a resposta foi imediata: “Vamos
+        formar um povoado do lado de Macaíba próximo ao Juremal”.</p>
     </section>
   </main>
 
@@ -112,7 +139,7 @@
       <div class="channels">
         <img src="https://placehold.co/500x500/blue/white" alt="">
         <ul>
-          <li>Canais de Atendimento</li>  
+          <li>Canais de Atendimento</li>
           <li><span>Telefone:</span> (84) 3251-2273</li>
           <li><span>E-Mail:</span> camaraspp@outlook.com</li>
           <li><span>Endereço:</span> Rua José Claudino, 418,</li>
@@ -123,10 +150,7 @@
     </footer>
   </div>
   <script src="src/js/navbar.js"></script>
+  <script src="src/js/carousel.js"></script>
   <script src="src/js/sidebar.js"></script>
 </body>
-
-
 </html>
-
-
