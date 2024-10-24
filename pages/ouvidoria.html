@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="../src/css/main.css">
   <link rel="stylesheet" href="../src/css/carousel.css">
+  <link rel="stylesheet" href="../src/css/sidebar.css">
   <link rel="stylesheet" href="../src/css/navbar.css">
   <link rel="stylesheet" href="../src/css/quick-access.css">
   <link rel="stylesheet" href="../src/css/vereadores.css">
@@ -19,8 +20,8 @@
 
 </head>
 <body>
-  <div class="container-fluid">
-    <nav class="container navbar">
+  <div class="container-fluid navbar">
+    <nav class="container">
       <ul>
         <li class="logo"><a href="../index.html">LOGO</a></li>
       </ul>
@@ -28,14 +29,50 @@
         <li><button class="btn btn-rounded btn-menu">&#9776;</button></li>  
       </ul>
       <ul class="nav-menu d-none-mobile">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="sobre.html">Municio</a></li>
-        <li><a href="ouvidoria.html">Ouvidoria</a></li>
-        <li><a href="esic.html">E-Sic</a></li>
-        <li><button class="btn bnt-menu btn-rounded">&#9776;</button></li>  
+        <li><a class="nav-item-link" href="../index.html">Início</a></li>
+        <li><a class="nav-item-link" href="municipio.html">Município</a></li>
+        <li><a class="nav-item-link" href="ouvidoria.html">Ouvidoria</a></li>
+        <li><a class="nav-item-link" href="esic.html">E-Sic</a></li>
+        <li class="d-none-mobile"><button class="btn bnt-menu btn-rounded" id="open-sidebar">&#9776;</button></li>
       </ul>
     </nav>
   </div>
+
+  <div class="sidebar ">
+    <ul class="sidebar-content">
+      <li class="nav-item">
+        <details class="item nav-item-link">
+          <summary>Institucial</summary>
+          <ul>
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </details>
+      </li>
+
+      <li class="nav-item">
+        <details class="item nav-item-link">
+          <summary>Lesgislativo</summary>
+          <ul>
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </details>
+      </li>
+
+      <li class="nav-item">
+        <details class="item nav-item-link">
+          <summary>Transparência</summary>
+          <ul>
+            <li><a href="#">...</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+  <div class="overlay"></div>
 
   <div class="container">
     <main>
@@ -61,18 +98,11 @@
       </div>
     </main>
   </div>
+
   <div class="container-fluid footer">
     <footer class="container">
-      <div class="socials">
-        <h1>Redes Sociais</h1>
-        <div class="list">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
-      </div>
       <div class="channels">
-        <img src="https://placehold.co/500x500/blue/white" alt="">
+        <img src="https://placehold.co/500x500/skyblue/white" alt="">
         <ul>
           <li>Canais de Atendimento</li>
           <li><span>Telefone:</span> (84) 3251-2273</li>
@@ -82,12 +112,19 @@
           <li><span>Horário:</span> De Segunda a Sexta, das 8:00 às 13:00</li>
         </ul>
       </div>
+      <div class="socials">
+        <h1>Redes Sociais</h1>
+        <div class="list">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
-  <script src="/src/js/navbar.js"></script>
-  <script src="src/js/carousel.js"></script>
+  <script src="../src/js/navbar.js"></script>
+  <script src="../src/js/carousel.js"></script>
+  <script src="../src/js/sidebar.js"></script>
 </body>
 </html>
