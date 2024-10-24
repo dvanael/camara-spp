@@ -1,54 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>São Paulo do Potengi - O Município</title>
-    <link rel="stylesheet" href="municipio.css  ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CamaraSPP - Câmara Municipal de São Paulo do Potengi - Brasil</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="municipio.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/navbar.css">
 </head>
+
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+  <!-- Container principal -->
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="container navbar">
+      <ul>
+        <li class="logo"><a href="index.html">LOGO</a></li>
+      </ul>
+      <ul class="nav-menu d-none-mobile">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="municipio.html">Município</a></li>
+        <li><a href="ouvidoria.html">Ouvidoria</a></li>
+        <li><a href="esic.html">E-Sic</a></li>
+        <li><button class="btn btn-rounded">&#9776;</button></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Conteúdo principal da página -->
+  <main class="container">
+    <section class="municipio-section">
+      <h1>O MUNICIPIO</h1>
+
+
+      <div class="blue-box"></div>
+      <p>São Paulo do Potengi é um município brasileiro do estado do Rio Grande do Norte, localizado a 71 quilômetros da capital potiguar, na região do Agreste Potiguar. De acordo com o censo realizado pelo IBGE (Instituto Brasileiro de Geografia e Estatística) no ano de 2013, sua população é de 17.066 habitantes. Área territorial de 221 km².</p>
+      <p>Além de Canguaretama e Ceará-Mirim, São Paulo do Potengi é um dos três municípios do estado do Rio Grande do Norte que ganharão unidades do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).</p>
+      <p>Fundação: 1943<br>
+        Gentílico: Potengiense</p>
+    </section>
+
+
+    <section class="historia-section">
+      <h2>HISTORIA DO MUNICIPIO</h2>
+      <p>Na primeira metade do século passado, na margem esquerda do Rio Potengi, em território pertencente a São Gonçalo do Amarante, existia um povoado por nome “Juremal” que se destacava devido ao seu acentuado comércio, inclusive com feira dominical.</p>
+      <p>O pequeno lugarejo localizava-se bem próximo da margem do Rio Potengi, correndo sempre o risco de enchentes em épocas de inverno, como a que ocorreu em 1909, quando o povoado foi inundado. Temendo a ameaça das águas, Bento Urbano de Araújo, morador e comerciante daquela localidade, resolveu pedir ao chefe do Juremal o Sr. Avelino Pinheiro, para mudar-se para um local mais afastado do rio. Tendo seu pedido negado, o mesmo foi falar com o Cel. Manoel Maurício Freire, chefe político de Macaíba. Devido a problemas políticos e pessoais entre o chefe político macaibense e Estevam Moura, chefe político de São Gonçalo do Amarante, a resposta foi imediata: “Vamos formar um povoado do lado de Macaíba próximo ao Juremal”.</p>
+    </section>
+  </main>
+
+
+
+
+  <div class="container-fluid footer">
+    <footer class="container">
+      <div class="socials">
+        <h1>Redes Sociais</h1>
+        <div class="list">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
         </div>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Município</a>
-            <a href="#">E-SIC</a>
-            <a href="#">Ouvidoria</a>
-            <div class="menu-icon">
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="title-section">
-            <h1>O MUNICÍPIO</h1>
-        </section>
-
-        <section class="image-section">
-            <div class="blue-box"></div>
-        </section>
-
-        <section class="content">
-            <p>São Paulo do Potengi é um município brasileiro do estado do Rio Grande do Norte, localizado a 71 quilômetros da capital potiguar, na região do Agreste Potiguar. De acordo com o censo realizado pelo IBGE (Instituto Brasileiro de Geografia e Estatística) no ano 2013, sua população é de 17.066 habitantes. Área territorial de 221 km².</p>
-            <p>Além de Canguaretama e Ceará-Mirim, São Paulo do Potengi é um dos três municípios do estado do Rio Grande do Norte que ganharão unidades do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).</p>
-            <p><strong>Fundação:</strong> 1943</p>
-            <p><strong>Gentílico:</strong> Potengiense</p>
-        </section>
-
-        <section class="history">
-            <h2>HISTÓRIA DO MUNICÍPIO</h2>
-            <p>Na primeira metade do século passado, na margem esquerda do Rio Potengi, em território pertencente a São Gonçalo do Amarante, existia um povoado por nome “Juremal” que se destacava devido ao seu acentuado comércio, inclusive com feira dominical.</p>
-            <p>O pequeno lugarejo localizava-se bem próximo da margem do Rio Potengi, correndo sempre o risco de enchentes em épocas de inverno, como a que ocorreu em 1909, quando o povoado foi inundado. Temendo a ameaça das águas, Bento Urbano de Araújo, morador e comerciante daquela localidade, resolveu pedir ao chefe do Juremal o Sr. Avelino Pinheiro, para mudar-se para um local mais afastado do rio...</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-bar"></div>
+      </div>
+      <div class="channels">
+        <img src="https://placehold.co/500x500/blue/white" alt="">
+        <ul>
+          <li>Canais de Atendimento</li>
+          <li><span>Telefone:</span> (84) 3251-2273</li>
+          <li><span>E-Mail:</span> camaraspp@outlook.com</li>
+          <li><span>Endereço:</span> Rua José Claudino, 418,</li>
+          <li>Bairro Santos Dumont - CEP: 59460-000</li>
+          <li><span>Horário:</span> De Segunda a Sexta, das 8:00 às 13:00</li>
+        </ul>
+      </div>
     </footer>
+  </div>
+  <script src="src/js/navbar.js"></script>
 </body>
+
+
 </html>
+
+
