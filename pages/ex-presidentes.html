@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos Ex-Presidentes - Câmara Municipal de São Paulo do Potengi</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+
+    <div class="container-fluid navbar">
+        <nav class="container">
+            <ul>
+                <li class="logo"><a href="index.html">LOGO</a></li>
+            </ul>
+            <ul class="nav-btn-menu d-mobile ">
+                <link rel="stylesheet" href="src/css/main.css">
+            </ul>
+            <ul class="nav-menu d-none-mobile">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Município</a></li>
+                <li><a href="contato.html">Ouvidoria</a></li>
+                <li><a href="contato.html">E-Sic</a></li>
+                <li class="d-none-mobile"><button class="btn bnt-menu btn-rounded" id="open-sidebar">&#9776;</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="sidebar ">
+        <ul class="sidebar-content">
+            <li class="nav-item">
+                <details class="item">
+                    <summary>Institucial</summary>
+                    <ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </details>
+            </li>
+
+            <li class="nav-item">
+                <details class="item">
+                    <summary>Lesgislativo</summary>
+                    <ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                </details>
+            </li>
+
+            <li class="nav-item">
+                <details class="item">
+                    <summary>Transparência</summary>
+                    <ul>
+                        <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+                        <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+                        <li><a href="projetos-de-lei.html">Projetos de Lei</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth <= 576) {
+                const navMenu = document.querySelector('.nav-menu');
+                const navItems = document.querySelectorAll('.nav-item');
+
+                navItems.forEach(item => {
+                    navMenu.appendChild(item.cloneNode(true));
+                });
+            }
+        });
+    </script>
+
+
+    <main class="container">
+        <h2>Galeria dos Ex-Presidentes</h2>
+
+        <section class="galeria">
+            <div class="card">
+                <div class="card-img" style="background-color: #007BFF;"></div>
+                <div class="card-info">
+                    <p>Fulano de Tal</p>
+                    <p>Ano</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-color: #007BFF;"></div>
+                <div class="card-info">
+                    <p>Fulano de Tal</p>
+                    <p>Ano</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-color: #007BFF;"></div>
+                <div class="card-info">
+                    <p>Fulano de Tal</p>
+                    <p>Ano</p>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+
+
+    <div class="container-fluid footer">
+        <footer class="container">
+            <div class="socials">
+                <h1>Redes Sociais</h1>
+                <div class="list">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="channels">
+                <img src="https://placehold.co/500x500/blue/white" alt="">
+                <ul>
+                    <li>Canais de Atendimento</li>
+                    <li><span>Telefone:</span> (84) 3251-2273</li>
+                    <li><span>E-Mail:</span> camaraspp@outlook.com</li>
+                    <li><span>Endereço:</span> Rua José Claudino, 418,</li>
+                    <li>Bairro Santos Dumont - CEP: 59460-000</li>
+                    <li><span>Horário:</span> De Segunda a Sexta, das 8:00 às 13:00</li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+<script src="src/js/navbar.js"></script>
+
+</html>
