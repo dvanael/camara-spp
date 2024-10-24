@@ -25,14 +25,25 @@
   }
 }
 
-.nav-menu a {
+.nav-menu .nav-item-link {
   font-size: 1.1rem;
   font-weight: 550;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-950);
 }
+.nav-menu .nav-item-link summary{
+  color: var(--text-950);
+}
+.nav-menu .nav-item-link ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
+.nav-menu .nav-item-link ul li{
+  padding: 0;
+}
 .nav-btn-menu{
   @media screen and (max-width: 576px) {
     position: fixed;
