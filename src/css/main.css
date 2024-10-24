@@ -254,3 +254,22 @@ section {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+
+.img-form-esic {
+  height: 80vh;
+}
+
+#InputName, #InputEmail, #InputDesc {
+  height: 40px;
+  width: 30rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid var(--accent-950);
+  &:focus{
+    border: 1px solid var(--accent-400);
+  }
+}
+
+#InputDesc {
+  height: 90px;
+}
