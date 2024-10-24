@@ -184,9 +184,9 @@ section {
   margin-bottom: 2rem;
 }
 
-.container{
+/* .container{
   max-width: 1200px;
-}
+} */
 
 @media screen and (max-width: 576px) {
   .d-none-mobile {
@@ -255,7 +255,7 @@ section {
   object-fit: cover;
 }
 
-.img-form-esic {
+.img-forms {
   height: 80vh;
 }
 
@@ -272,4 +272,8 @@ section {
 
 #InputDesc {
   height: 90px;
+}
+
+.InputDesc-ouvidoria {
+  height: 200px;
 }
