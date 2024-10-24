@@ -1,6 +1,16 @@
 
+.container-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .carousel {
   position: relative;
+  @media screen and (min-width: 1024px) {
+    width: 60vw;
+  }
 }
 
 .carousel .btn {

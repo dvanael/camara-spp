@@ -11,3 +11,15 @@ overlay.addEventListener('click', () => {
   sidebar.classList.remove('open');
   overlay.style.display = 'none';
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth <= 576) {
+    const navMenu = document.querySelector('.nav-menu');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+      navMenu.appendChild(item.cloneNode(true));
+    });
+  }
+});
