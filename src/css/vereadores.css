@@ -76,4 +76,6 @@
   text-align: center;
   font-size: 0.9rem;
   padding-inline: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }

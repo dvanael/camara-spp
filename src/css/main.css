@@ -254,9 +254,10 @@ section {
   }
 }
 
-.about-camara .content img{
-  aspect-ratio: 16/9;
+.about-camara .content .img img{
   object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 150rem;
 }
 
 .img-forms {

@@ -58,6 +58,8 @@
 }
 
 .carousel .item {
-  flex: 0 0 80%;
+  flex: 0 0 100%;
   scroll-snap-align: start;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
