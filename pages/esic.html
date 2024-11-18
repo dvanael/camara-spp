@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../src/css/quick-access.css">
   <link rel="stylesheet" href="../src/css/vereadores.css">
   <link rel="stylesheet" href="../src/css/footer.css">
+  <link rel="stylesheet" href="../src/css/forms.css">
 
 </head>
 <body>
@@ -78,19 +79,28 @@
   <div class="container">
     <main>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12  align-items-center justify-content-center d-flex my-auto">
-          <img src="../src/img/esic.png" class="img-forms">
+        <div class="col-lg-6 col-md-6 col-sm-12  align-items-center justify-content-center flex-column d-flex my-auto">
+          <div class="esic-title text-center">
+            <h1>E-SIC</h1>
+            <p>SISTEMA ELETRÔNICO DE INFORMAÇÃO AO CIDADÃO</p>
+          </div>
+          <img src="../src/img/forms/e-sic.png" class="img-forms">
+          <div class="text-left">
+            <p>
+              <strong>DICA:</strong> Antes de solicitar uma informação esclareça suas dúvidas ou acesse nossa transparência ativa. Lembrando que criticas, denúncias, elogios, reclamações e sugestões é através da ouvidoria.
+            </p>
+          </div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex my-auto">
-          <form>
+          <form action="">
             <div class="mb-3">
               <label for="InputName" class="form-label">NOME</label>
-              <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp">
+              <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Digite seu nome">
             </div>
             <div class="mb-3">
               <label for="FormControlInput1" class="form-label">EMAIL</label>
-              <input type="email" class="form-control" id="InputEmail" placeholder="name@example.com">
+              <input type="email" class="form-control" id="InputEmail" placeholder="nome@exemplo.com">
             </div>
             <div class="mb-3">
               <label for="InputDesc" class="form-label">DESCREVA A SUA SOLICITAÇÃO</label>

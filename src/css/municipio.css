@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
   }
  
   .container-fluid {
@@ -14,19 +13,18 @@ body {
     margin: 0 auto;
   }
 
-  .municipio-section, .historia-section {
-    padding: 2rem 1rem;
-  }
  
   .municipio-section h1, .historia-section h2 {
     text-align: center;
-    color: #000;
-    margin-bottom: 1.5rem;
+    color: var(--text-950);
   }
  
   p {
     text-align: justify;
-    color: black;
+    color: var(--text-950);
     line-height: 1.6;
   }
  
+.municipio-img{
+  margin-block: 2rem;
+}
