@@ -151,7 +151,17 @@ body {
   font-weight: 400;
   background-color: var(--background-50);
   z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  & .container{
+    flex: 1 1 0;
+  }
+
 }
+
+
 
 body *{
   color: var(--text-950);

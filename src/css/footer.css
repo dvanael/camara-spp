@@ -9,9 +9,9 @@ footer{
   padding-block: 0.6rem;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-
   }
 }
+
 
 footer *{
   color: var(--text-100);
@@ -19,6 +19,7 @@ footer *{
 
 footer .socials{
   margin-block: 0.2rem;
+  margin-left: auto;
 }
 footer .socials h1{
   font-size: 1.5rem;
@@ -30,6 +31,22 @@ footer .socials .list{
   display: flex;
   gap: 3.5rem;
   width: 100%;
+}
+
+footer .socials .list a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  border-radius: var(--default-radius);
+  background-color: var(--secondary-400);
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  &:hover{
+    scale: 1.1;
+  }
 }
 
 footer .channels{
