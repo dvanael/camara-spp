@@ -39,10 +39,10 @@
   }
 }
 details[open]>summary:not([role]):not(:focus) {
-  color: var(--primary-300);
+  color: var(--text-950);
 }
 details summary:focus:not([role]) {
-  color: var(--primary-300);
+  color: var(--text-950);
 }
 
 .sidebar-content li .item ul li{

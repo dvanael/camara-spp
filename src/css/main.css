@@ -224,6 +224,7 @@ section {
   color: var(--text-50);
   &:hover{
     scale: 1.1;
+    color: var(--text-50);
   }
 }
 
