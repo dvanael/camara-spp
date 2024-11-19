@@ -32,6 +32,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-950);
+  &:hover{
+    scale: 1.1;
+  }
 }
 .nav-menu .nav-item-link summary{
   color: var(--text-950);

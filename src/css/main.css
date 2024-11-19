@@ -292,3 +292,7 @@ section {
 .breadcrumb-nav ul li{
   padding: 0.3rem 0.7rem;
 }
+
+.active-link{
+  color: var(--accent-500) !important;
+}
