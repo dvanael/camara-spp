@@ -7,7 +7,7 @@ footer{
   display: flex;
   flex-direction: column-reverse;
   padding-block: 1.5rem 0.5rem;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -18,8 +18,10 @@ footer *{
 }
 
 footer .socials{
-  margin-block: 0.2rem;
-  margin-left: auto;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 footer .socials h1{
   font-size: 1.5rem;
