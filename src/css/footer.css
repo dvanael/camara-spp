@@ -6,7 +6,7 @@
 footer{
   display: flex;
   flex-direction: column-reverse;
-  padding-block: 0.6rem;
+  padding-block: 1.5rem 0.5rem;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
   }
@@ -29,7 +29,7 @@ footer .socials h1{
 footer .socials .list{
   font-size: 3rem;
   display: flex;
-  gap: 3.5rem;
+  gap: 2.5rem;
   width: 100%;
 }
 
@@ -39,8 +39,8 @@ footer .socials .list a{
   align-items: center;
   aspect-ratio: 1/1;
   padding: 0.5rem;
+  border: var(--secondary-300) 0.2rem solid;
   border-radius: var(--default-radius);
-  background-color: var(--secondary-400);
   text-decoration: none;
   width: 4rem;
   height: 4rem;
