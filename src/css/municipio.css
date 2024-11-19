@@ -1,33 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.municipio-section h1, .historia-section h2 {
+  text-align: center;
+  color: var(--text-950);
 }
 
-body {
-    font-family: Arial, sans-serif;
-  }
+h1{
+  font-size: 3rem;
+}
 
-  .container-fluid {
-    width: 100%;
-    margin: 0 auto;
-  }
+h2{
+  font-size: 2.5rem;
+}
 
-  .municipio-section h1, .historia-section h2 {
-    text-align: center;
-    color: var(--text-950);
-  }
-  h1{
-    font-size: 3rem;
-  }
-  h2{
-    font-size: 2.5rem;
-  }
-  p {
-    text-align: justify;
-    color: var(--text-950);
-    line-height: 1.6;
-  }
+p {
+  text-align: justify;
+  color: var(--text-950);
+  line-height: 1.6;
+}
 
 .municipio-img{
   margin-block: 1rem;
