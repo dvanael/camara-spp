@@ -288,3 +288,7 @@ section {
 .help-form p{
   margin: 0;
 }
+
+.breadcrumb-nav ul li{
+  padding: 0.3rem 0.7rem;
+}
