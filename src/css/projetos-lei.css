@@ -19,3 +19,7 @@ body {
 .card {
     margin-bottom: 5px;
 }
+
+input {
+    background-color: white;
+}
