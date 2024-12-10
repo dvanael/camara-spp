@@ -59,9 +59,13 @@
 
 
 .logo{
+  width: 13vw;
   @media screen and (max-width: 576px) {
     display: flex;
     justify-content: center;
     width: 90vw;
+  }
+  &:hover{
+    scale: 1.1;
   }
 }

@@ -122,15 +122,15 @@ h1, h2, h3, h4, h5 {
 
 html {font-size: 100%;} /* 16px */
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+h1 {font-size: 2.5rem; /* 40px */}
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+h2 {font-size: 2.158rem; /* 34.56px */}
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+h3 {font-size: 1.777rem; /* 28.48px */}
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+h4 {font-size: 1.333rem; /* 21.28px */}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+h5 {font-size: 1rem; /* 16px */}
 
 small {font-size: 0.750rem; /* 12px */}
 
@@ -248,4 +248,35 @@ section {
 
 .btn-ano {
   width: 40px;
+}
+
+.icone-pdf{
+  color: var(--accent-800);
+  &:hover{
+    scale: 1.3;
+  }
+}
+
+.badge-status{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    scale: 1.1;
+    color: var(--text-50) !important;
+  }
+  &:hover{
+    scale: 1.1;
+  }
+}
+
+.document-link{
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  &:hover{
+    scale: 1.05;
+  }
 }
