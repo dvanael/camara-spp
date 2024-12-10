@@ -6,19 +6,22 @@
 footer{
   display: flex;
   flex-direction: column-reverse;
-  padding-block: 0.6rem;
-  @media screen and (min-width: 1024px) {
+  padding-block: 1.5rem 0.5rem;
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-
   }
 }
+
 
 footer *{
   color: var(--text-100);
 }
 
 footer .socials{
-  margin-block: 0.2rem;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 footer .socials h1{
   font-size: 1.5rem;
@@ -28,8 +31,24 @@ footer .socials h1{
 footer .socials .list{
   font-size: 3rem;
   display: flex;
-  gap: 3.5rem;
+  gap: 2.5rem;
   width: 100%;
+}
+
+footer .socials .list a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  border: var(--secondary-300) 0.2rem solid;
+  border-radius: var(--default-radius);
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  &:hover{
+    scale: 1.1;
+  }
 }
 
 footer .channels{

@@ -99,7 +99,17 @@ body {
   font-weight: 400;
   background-color: var(--background-50);
   z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  & .container{
+    flex: 1 1 0;
+  }
+
 }
+
+
 
 body *{
   color: var(--text-950);
@@ -134,6 +144,9 @@ section {
 
 .container{
   max-width: 1024px;
+  @media screen and (min-width: 768px) {
+    padding-inline: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -162,6 +175,7 @@ section {
   color: var(--text-50);
   &:hover{
     scale: 1.1;
+    color: var(--text-50);
   }
 }
 
@@ -208,30 +222,26 @@ section {
   width: 150rem;
 }
 
-.img-forms {
-  height: 80vh;
-}
-
-#InputName, #InputEmail, #InputDesc {
-  height: 40px;
-  width: 30rem;
-  border-radius: 10px;
-  background-color: transparent;
-  border: 1px solid var(--accent-950);
-  &:focus{
-    border: 1px solid var(--accent-400);
-  }
-}
-
-#InputDesc {
-  height: 90px;
-}
-
-.InputDesc-ouvidoria {
-  height: 200px;
-}
 
 [role=group], [role=search] {
   box-shadow: none;
   border: none;
+}
+
+.help-form{
+  background-color: var(--background-100);
+  padding: 0.5rem 1rem;
+  border-radius: var(--default-radius);
+}
+.help-form p{
+  margin: 0;
+}
+
+.breadcrumb-nav ul li{
+  padding: 0 0.5rem 0.7rem 0.5rem;
+  
+}
+
+.active-link{
+  color: var(--accent-500) !important;
 }
