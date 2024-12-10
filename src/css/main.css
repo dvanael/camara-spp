@@ -245,3 +245,7 @@ section {
 .active-link{
   color: var(--accent-500) !important;
 }
+
+.btn-ano {
+  width: 40px;
+}
